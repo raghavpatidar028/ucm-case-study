@@ -16,11 +16,11 @@
     --border2: #cdc7bc;
     --gold: #b8860b;
     --gold-light: #f5e6c0;
-    --ucm-maroon: #8B1A1A;
-    --ucm-gold: #C9A84C;
-    --ucm-dark: #1a0505;
-    --accent: #8B1A1A;
-    --accent2: #C9A84C;
+    --ucm-maroon: #C8102E;
+    --ucm-gold: #b0b8c1;
+    --ucm-dark: #1f1f1f;
+    --accent: #C8102E;
+    --accent2: #b0b8c1;
     --green: #2d6a4f;
     --blue: #1a4a8b;
   }
@@ -52,8 +52,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.12) 0%, transparent 55%),
-      radial-gradient(ellipse at 10% 80%, rgba(139,26,26,0.25) 0%, transparent 50%);
+      radial-gradient(ellipse at 80% 20%, rgba(200,16,46,0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 10% 80%, rgba(200,16,46,0.10) 0%, transparent 50%);
     pointer-events: none;
   }
 
@@ -61,8 +61,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 56px 56px;
     pointer-events: none;
   }
@@ -74,7 +74,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 36px 64px;
-    border-bottom: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
   .cover-logo {
@@ -130,11 +130,11 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ucm-gold);
-    border: 1px solid rgba(201,168,76,0.4);
+    border: 1px solid rgba(255,255,255,0.25);
     padding: 6px 16px;
     margin-bottom: 36px;
     width: fit-content;
-    background: rgba(201,168,76,0.06);
+    background: rgba(200,16,46,0.12);
   }
 
   .cover-category::before {
@@ -160,7 +160,7 @@
 
   .cover-rule {
     width: 72px; height: 3px;
-    background: linear-gradient(90deg, var(--ucm-gold), transparent);
+    background: linear-gradient(90deg, var(--ucm-maroon), transparent);
     margin: 28px 0;
   }
 
@@ -178,12 +178,12 @@
     grid-template-columns: repeat(4, auto);
     gap: 0;
     max-width: 720px;
-    border: 1px solid rgba(201,168,76,0.2);
+    border: 1px solid rgba(255,255,255,0.15);
   }
 
   .cover-meta-cell {
     padding: 20px 28px;
-    border-right: 1px solid rgba(201,168,76,0.12);
+    border-right: 1px solid rgba(255,255,255,0.08);
   }
 
   .cover-meta-cell:last-child { border-right: none; }
@@ -207,7 +207,7 @@
     position: relative;
     z-index: 1;
     padding: 28px 64px;
-    border-top: 1px solid rgba(201,168,76,0.12);
+    border-top: 1px solid rgba(255,255,255,0.08);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -430,8 +430,8 @@
     border-radius: 0;
   }
 
-  .pill-red { background: rgba(139,26,26,0.1); color: var(--ucm-maroon); border: 1px solid rgba(139,26,26,0.2); }
-  .pill-gold { background: rgba(201,168,76,0.15); color: #7a5f10; border: 1px solid rgba(201,168,76,0.3); }
+  .pill-red { background: rgba(200,16,46,0.08); color: var(--ucm-maroon); border: 1px solid rgba(200,16,46,0.25); }
+  .pill-gold { background: rgba(255,255,255,0.12); color: #7a5f10; border: 1px solid rgba(255,255,255,0.2); }
   .pill-green { background: rgba(45,106,79,0.1); color: var(--green); border: 1px solid rgba(45,106,79,0.2); }
 
   /* ─── TECHNICAL PLAN ─── */
@@ -719,7 +719,7 @@
   }
 
   .match-badge.met { background: rgba(45,106,79,0.1); color: var(--green); border: 1px solid rgba(45,106,79,0.25); }
-  .match-badge.strong { background: rgba(139,26,26,0.1); color: var(--ucm-maroon); border: 1px solid rgba(139,26,26,0.2); }
+  .match-badge.strong { background: rgba(200,16,46,0.08); color: var(--ucm-maroon); border: 1px solid rgba(200,16,46,0.25); }
 
   /* ─── SKILLS BAR ─── */
   .skill-bars { display: flex; flex-direction: column; gap: 14px; margin-bottom: 48px; }
@@ -810,7 +810,7 @@
   .closing-box .sig {
     margin-top: 36px;
     padding-top: 24px;
-    border-top: 1px solid rgba(201,168,76,0.15);
+    border-top: 1px solid rgba(255,255,255,0.12);
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: rgba(250,250,248,0.35);
@@ -846,7 +846,7 @@
     align-items: flex-start;
     padding: 20px 24px;
     background: rgba(139,26,26,0.05);
-    border: 1px solid rgba(139,26,26,0.15);
+    border: 1px solid rgba(200,16,46,0.12);
     margin-bottom: 20px;
   }
 
@@ -1027,8 +1027,8 @@
         <div class="cover-meta-value">Raghav Patidar</div>
       </div>
       <div class="cover-meta-cell">
-        <div class="cover-meta-label">Alumni Status</div>
-        <div class="cover-meta-value">MS CIS, May 2025</div>
+        <div class="cover-meta-label">Education</div>
+        <div class="cover-meta-value">MS CIS, UCM 2025</div>
       </div>
     </div>
   </div>
@@ -1064,7 +1064,7 @@
   <div class="eyebrow">Section 01</div>
   <h2 class="section-title">I Know This Institution — From the Inside</h2>
   <p class="section-lead">
-    I'm not an outside candidate guessing at UCM's challenges. I earned my MS in Computer Information Systems here, served as a Teaching Assistant in the Data Analysis program for two years, and watched firsthand how institutional data systems impact student success decisions. This case study is grounded in that lived context, supplemented by thorough research into UAIR's current mandate.
+    I'm not an outside candidate guessing at UCM's challenges. I earned my MS in Computer Information Systems here and spent two years on campus watching firsthand how institutional data systems impact student success decisions. This case study is grounded in that lived context, supplemented by thorough research into UAIR's current mandate.
   </p>
 
   <!-- UCM STATS -->
@@ -1234,7 +1234,7 @@
     <div class="alert-icon">🎓</div>
     <div>
       <h5>Why This Gap Matters to Me Personally</h5>
-      <p>I was a student here. I sat in classrooms where I saw peers struggle and disengage without the right support. As a Teaching Assistant, I observed firsthand how late detection of at-risk students limits intervention effectiveness. Data that surfaces these patterns earlier changes outcomes — and that's why this role matters.</p>
+      <p>I was a student here. I sat in classrooms where I saw peers struggle and disengage without the right support. As a graduate student at UCM, I observed firsthand how late detection of at-risk students limits intervention effectiveness. Data that surfaces these patterns earlier changes outcomes — and that's why this role matters.</p>
     </div>
   </div>
 
@@ -1364,7 +1364,7 @@
           <div class="dash-bar" style="height:70%;"></div>
           <div class="dash-bar" style="height:65%;"></div>
           <div class="dash-bar" style="height:72%;"></div>
-          <div class="dash-bar" style="height:74%;opacity:0.6;border:1px dashed rgba(201,168,76,0.5);background:rgba(201,168,76,0.3);"></div>
+          <div class="dash-bar" style="height:74%;opacity:0.6;border:1px dashed rgba(201,168,76,0.5);background:rgba(255,255,255,0.2);"></div>
         </div>
       </div>
       <div class="dash-chart">
@@ -1533,7 +1533,7 @@
   <div class="eyebrow">Section 05</div>
   <h2 class="section-title">The Case for Raghav Patidar</h2>
   <p class="section-lead">
-    Most candidates bring technical skills. I bring that plus institutional knowledge, alumni loyalty, and two years of experience working alongside UCM students and faculty as a Teaching Assistant. Here's how my background maps to what UAIR needs.
+    Most candidates bring technical skills. I bring that plus deep institutional knowledge and genuine alumni investment in UCM's success. Here's how my background maps precisely to what UAIR needs.
   </p>
 
   <!-- SKILLS BARS -->
@@ -1609,7 +1609,7 @@
     <div class="match-card">
       <span class="match-badge met">Met</span>
       <h4>Cross-Functional Collaboration</h4>
-      <p>Collaborated with IT and leadership to evaluate and implement BI tools. At UCM, worked alongside the professor and students as TA — I know how to bridge technical and non-technical stakeholders.</p>
+      <p>Collaborated with IT and leadership to evaluate and implement BI tools. At Infosys, I regularly translated complex data concepts for non-technical executives — I know how to bridge the gap between technical systems and stakeholder needs.</p>
     </div>
     <div class="match-card">
       <span class="match-badge met">Met</span>
@@ -1618,8 +1618,8 @@
     </div>
     <div class="match-card">
       <span class="match-badge strong">Unique Advantage</span>
-      <h4>UCM Alumni & Teaching Assistant</h4>
-      <p>I completed my MS in Computer Information Systems here (May 2025) and served as a Teaching Assistant for 2 years. I know UCM's systems, culture, academic calendar, and student data challenges better than any external hire.</p>
+      <h4>UCM Alumni — Deep Institutional Knowledge</h4>
+      <p>I completed my MS in Computer Information Systems here (May 2025). I know UCM's academic systems, culture, calendar cycles, and the real student data challenges UAIR navigates — in a way no external hire can replicate.</p>
     </div>
     <div class="match-card">
       <span class="match-badge strong">Unique Advantage</span>
@@ -1632,7 +1632,7 @@
   <div class="closing-box">
     <h2>Why This Role. Why UCM. Why Now.</h2>
     <p>
-      Most applicants for a role like this will have the technical skills. Few will have spent two years as a Teaching Assistant in the very department whose data this role supports — watching students navigate academic challenges, working alongside faculty, and seeing firsthand how late or incomplete information costs people their degree paths.
+      Most applicants for a role like this will have the technical skills. Few will have spent two years on campus as a graduate student who genuinely cares about what UAIR does — having seen firsthand how late or incomplete data costs students their degree paths and limits the university's ability to act on their behalf.
     </p>
     <p style="margin-top:18px;">
       UCM gave me a foundation and a community. This role is a chance to give something back that is genuinely useful — not just functional dashboards, but systems that help the university better serve the next cohort of students sitting where I sat. I'm not applying because this is a convenient next step. I'm applying because I care about what UAIR does and I'm confident I can make it significantly better.
