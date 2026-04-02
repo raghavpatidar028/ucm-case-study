@@ -7,22 +7,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #0f1318;
-    --paper: #fafaf8;
-    --cream: #f4f0e8;
-    --cream2: #ede8de;
-    --mid: #5c6470;
-    --border: #ddd8ce;
-    --border2: #cdc7bc;
+    --ink: #1a1a1a;
+    --paper: #ffffff;
+    --cream: #f5f5f5;
+    --cream2: #eeeeee;
+    --mid: #5a6470;
+    --border: #e0e0e0;
+    --border2: #cccccc;
     --gold: #b8860b;
-    --gold-light: #f5e6c0;
+    --gold-light: #fff3cd;
     --ucm-maroon: #C8102E;
-    --ucm-gold: #b0b8c1;
-    --ucm-dark: #1f1f1f;
+    --ucm-gold: #e8e8e8;
+    --ucm-dark: #C8102E;
     --accent: #C8102E;
-    --accent2: #b0b8c1;
+    --accent2: #a50d25;
     --green: #2d6a4f;
     --blue: #1a4a8b;
+    --charcoal: #2d2d2d;
   }
 
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,8 +39,8 @@
 
   /* ─── COVER ─── */
   .cover {
-    background: var(--ucm-dark);
-    color: var(--paper);
+    background: #C8102E;
+    color: #ffffff;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -52,8 +53,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 80% 20%, rgba(200,16,46,0.18) 0%, transparent 55%),
-      radial-gradient(ellipse at 10% 80%, rgba(200,16,46,0.10) 0%, transparent 50%);
+      radial-gradient(ellipse at 80% 10%, rgba(255,255,255,0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 10% 90%, rgba(0,0,0,0.18) 0%, transparent 55%);
     pointer-events: none;
   }
 
@@ -61,8 +62,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
     background-size: 56px 56px;
     pointer-events: none;
   }
@@ -74,7 +75,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 36px 64px;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
   }
 
   .cover-logo {
@@ -85,7 +86,7 @@
 
   .cover-logo-seal {
     width: 48px; height: 48px;
-    border: 2px solid var(--ucm-gold);
+    border: 2px solid rgba(255,255,255,0.7);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -93,7 +94,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 900;
-    color: var(--ucm-gold);
+    color: #ffffff;
   }
 
   .cover-logo-text {
@@ -129,8 +130,8 @@
     font-size: 10px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--ucm-gold);
-    border: 1px solid rgba(255,255,255,0.25);
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.35);
     padding: 6px 16px;
     margin-bottom: 36px;
     width: fit-content;
@@ -140,7 +141,7 @@
   .cover-category::before {
     content: '';
     width: 6px; height: 6px;
-    background: var(--ucm-gold);
+    background: rgba(255,255,255,0.8);
     border-radius: 50%;
   }
 
@@ -155,8 +156,8 @@
     letter-spacing: -0.01em;
   }
 
-  .cover-title .gold { color: var(--ucm-gold); }
-  .cover-title .maroon { color: #e88080; }
+  .cover-title .gold { color: rgba(255,255,255,0.9); }
+  .cover-title .maroon { color: rgba(255,255,255,0.75); }
 
   .cover-rule {
     width: 72px; height: 3px;
@@ -178,12 +179,12 @@
     grid-template-columns: repeat(4, auto);
     gap: 0;
     max-width: 720px;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.22);
   }
 
   .cover-meta-cell {
     padding: 20px 28px;
-    border-right: 1px solid rgba(255,255,255,0.08);
+    border-right: 1px solid rgba(255,255,255,0.12);
   }
 
   .cover-meta-cell:last-child { border-right: none; }
@@ -207,7 +208,7 @@
     position: relative;
     z-index: 1;
     padding: 28px 64px;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255,255,255,0.12);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,7 +235,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 26px;
     font-weight: 900;
-    color: var(--ucm-gold);
+    color: #ffffff;
     line-height: 1;
     display: block;
   }
@@ -361,7 +362,7 @@
     background: var(--ucm-maroon);
   }
 
-  .insight-box.gold::before { background: var(--ucm-gold); }
+  .insight-box.gold::before { background: #2d2d2d; }
   .insight-box.green::before { background: var(--green); }
   .insight-box.blue::before { background: var(--blue); }
 
@@ -431,7 +432,7 @@
   }
 
   .pill-red { background: rgba(200,16,46,0.08); color: var(--ucm-maroon); border: 1px solid rgba(200,16,46,0.25); }
-  .pill-gold { background: rgba(255,255,255,0.12); color: #7a5f10; border: 1px solid rgba(255,255,255,0.2); }
+  .pill-gold { background: rgba(255,255,255,0.18); color: #7a5f10; border: 1px solid rgba(255,255,255,0.2); }
   .pill-green { background: rgba(45,106,79,0.1); color: var(--green); border: 1px solid rgba(45,106,79,0.2); }
 
   /* ─── TECHNICAL PLAN ─── */
@@ -457,7 +458,7 @@
     gap: 12px;
   }
 
-  .plan-card-header.gold-bg { background: var(--ucm-gold); color: var(--ucm-dark); }
+  .plan-card-header.gold-bg { background: #2d2d2d; color: #ffffff; }
   .plan-card-header.green-bg { background: var(--green); }
   .plan-card-header.blue-bg { background: var(--blue); }
 
@@ -656,7 +657,7 @@
 
   /* ─── PULL QUOTE ─── */
   .pull-quote {
-    border-left: 4px solid var(--ucm-gold);
+    border-left: 4px solid var(--ucm-maroon);
     padding: 24px 32px;
     background: var(--cream);
     margin: 48px 0;
@@ -730,7 +731,7 @@
 
   .sb-track { flex: 1; height: 8px; background: var(--border); }
 
-  .sb-fill { height: 100%; background: linear-gradient(90deg, var(--ucm-maroon), var(--ucm-gold)); }
+  .sb-fill { height: 100%; background: linear-gradient(90deg, #C8102E, #e8534e); }
 
   .sb-pct { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--mid); width: 36px; text-align: right; }
 
@@ -771,7 +772,7 @@
 
   /* ─── CLOSING BOX ─── */
   .closing-box {
-    background: var(--ucm-dark);
+    background: #2d2d2d;
     color: var(--paper);
     padding: 56px;
     position: relative;
@@ -785,7 +786,7 @@
     top: -100px; right: -100px;
     width: 400px; height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(200,16,46,0.15) 0%, transparent 65%);
   }
 
   .closing-box h2 {
@@ -795,7 +796,7 @@
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-    color: var(--ucm-gold);
+    color: #ffffff;
   }
 
   .closing-box p {
@@ -810,7 +811,7 @@
   .closing-box .sig {
     margin-top: 36px;
     padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.12);
+    border-top: 1px solid rgba(255,255,255,0.18);
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: rgba(250,250,248,0.35);
@@ -869,7 +870,7 @@
     gap: 10px;
     margin-bottom: 20px;
     padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
   }
 
   .dash-dot { width: 10px; height: 10px; border-radius: 50%; }
@@ -927,7 +928,7 @@
   }
 
   .dash-chart {
-    background: rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.06);
     padding: 16px;
   }
@@ -950,12 +951,12 @@
 
   .dash-bar {
     flex: 1;
-    background: linear-gradient(to top, #8B1A1A, #C9A84C);
+    background: linear-gradient(to top, #C8102E, #e8534e);
     border-radius: 1px;
     opacity: 0.8;
   }
 
-  .dash-bar.dim { background: rgba(255,255,255,0.15); opacity: 1; }
+  .dash-bar.dim { background: rgba(255,255,255,0.22); opacity: 1; }
 
   .dash-hbars {
     display: flex;
@@ -965,8 +966,8 @@
 
   .dash-hbar-row { display: flex; align-items: center; gap: 8px; }
   .dash-hbar-label { font-family: 'DM Mono', monospace; font-size: 9px; color: rgba(255,255,255,0.4); width: 40px; flex-shrink: 0; }
-  .dash-hbar-track { flex: 1; height: 6px; background: rgba(255,255,255,0.08); }
-  .dash-hbar-fill { height: 100%; background: var(--ucm-gold); }
+  .dash-hbar-track { flex: 1; height: 6px; background: rgba(255,255,255,0.12); }
+  .dash-hbar-fill { height: 100%; background: #C8102E; }
 
   .chart-note { font-size: 11px; color: var(--mid); font-family: 'DM Mono', monospace; margin-top: 8px; }
 
@@ -1205,7 +1206,7 @@
       <div class="bar-row">
         <span class="bar-row-label">6-Year Graduation Rate</span>
         <div class="bar-track">
-          <div class="bar-fill" style="width:53%;background:var(--ucm-gold);filter:brightness(0.8);">
+          <div class="bar-fill" style="width:53%;background:#888888;">
             <span class="bar-fill-val">53%</span>
           </div>
         </div>
@@ -1421,7 +1422,7 @@
       <div class="roadmap-duration">1 Month</div>
       <div class="roadmap-deliverables">Document all existing data flows from Banner/Workday. Map field definitions to IPEDS requirements. Identify broken or missing ETL jobs. Interview UAIR team, advisors, and leadership on pain points. Deliver gap analysis report.</div>
     </div>
-    <div class="roadmap-phase" style="--phase-color: var(--ucm-gold);">
+    <div class="roadmap-phase" style="--phase-color: #2d2d2d;">
       <div class="roadmap-num">02</div>
       <div class="roadmap-phase-label">Days 31–60</div>
       <div class="roadmap-phase-title">ETL Stabilization</div>
